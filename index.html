@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+ <!-- Bootstrap CSS -->
+ <link
+ rel="stylesheet"
+ href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+/>
+
+<!-- Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+<!-- My CSS -->
+<link rel="stylesheet" href="style.css" />
+
+<!-- My JS -->
+<script src="main.js"></script>
+
+<!-- Font Awesome -->
+<script src="https://kit.fontawesome.com/408e7b0d6b.js"></script>
+
+<!--Google Font-->
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
+
+<title>Pomodoro Timer</title>
+<body onload="template()">
+    <div class="container">
+        <!----Heading-->
+        <h1 class = "text-center heading">Pomodoro Timer</h1>
+
+        <!--Main Timer-->
+        <div class="container timer">
+            <div class="row">
+                <div class="col-5">
+                    <h4 id="minutes"></h4>
+                </div>
+                <div class="col-2">
+                    <h4>:</h4>
+                </div>
+                <div class="col-5">
+                    <h4 id="seconds"></h4>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Finished Message -->
+      <div class="my-5">
+        <h3 id="done" class="text-center"></h3>
+      </div>
+
+        <!--Start, Pause, and Reset button-->
+        <div class="container d-flex justify-content-center">
+            <a class="button" onclick="start()">
+                <i class="fa-solid fa-play fa-2x"></i>
+            </a>
+
+            <!-- Page gets automatically refreshed -->
+            <a href="index.html"><i class="fa-solid fa-rotate-right fa-2x"></i></a>
+
+            <a class="button button_pause" onclick="pause()">
+                <i class="fa-solid fa-pause fa-2x"></i>
+            </a>
+        </div>
+
+
+    </div>
+</body>
+</html>
